@@ -35,6 +35,8 @@ if ($requireLogin) {
         </div>
         <nav class="admin-nav">
             <a href="dashboard.php" class="admin-link"><i class="fa-solid fa-grid"></i> Overview</a>
+            <a href="research.php" class="admin-link"><i class="fa-solid fa-flask"></i> Research Content</a>
+            <a href="library.php" class="admin-link"><i class="fa-solid fa-book"></i> Research Library</a>
             <a href="../dashboard.php" class="admin-link"><i class="fa-solid fa-chart-line"></i> Public Dashboard</a>
             <a href="../assessment.php" class="admin-link"><i class="fa-solid fa-clipboard-list"></i> Assessment</a>
             <a href="logout.php" class="admin-link text-danger"><i class="fa-solid fa-right-from-bracket"></i> Logout</a>

@@ -17,7 +17,7 @@ $bodyClass = $bodyClass ?? '';
     <title><?php echo e($pageTitle); ?> | <?php echo e(APP_NAME); ?></title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Sora:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
@@ -28,10 +28,9 @@ $bodyClass = $bodyClass ?? '';
     <div class="spinner"></div>
     <p>Initializing MindScan analytics...</p>
 </div>
-<div class="ambient-bg"></div>
-<div class="particle-layer" id="particle-layer"></div>
 
-<nav class="navbar navbar-expand-lg navbar-dark glass-nav fixed-top">
+
+<nav class="navbar navbar-expand-lg navbar-light glass-nav fixed-top">
     <div class="container-fluid">
         <a class="navbar-brand" href="index.php">
             <span class="brand-mark">MindScan</span>
@@ -47,11 +46,7 @@ $bodyClass = $bodyClass ?? '';
                 <li class="nav-item"><a class="nav-link" href="assessment.php">Assessment</a></li>
                 <li class="nav-item"><a class="nav-link" href="contact.php">Contact</a></li>
                 <li class="nav-item"><a class="nav-link" href="admin/login.php">Admin</a></li>
-                <li class="nav-item">
-                    <button class="btn btn-outline-light btn-sm theme-toggle" id="theme-toggle" type="button">
-                        <i class="fa-solid fa-sun"></i>
-                    </button>
-                </li>
+
             </ul>
         </div>
     </div>

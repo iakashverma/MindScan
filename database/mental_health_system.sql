@@ -51,11 +51,13 @@ CREATE TABLE research_items (
 
 CREATE TABLE research_documents (
     id INT AUTO_INCREMENT PRIMARY KEY,
-    title VARCHAR(150) NOT NULL,
-    doc_type ENUM('paper', 'synopsis', 'dataset') NOT NULL,
-    description TEXT NOT NULL,
+    title VARCHAR(255) NOT NULL,
+    doc_type VARCHAR(50) NOT NULL,
+    description TEXT,
     file_path VARCHAR(255) NOT NULL,
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    file_size INT DEFAULT 0,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 );
 
 INSERT INTO admin (username, password) VALUES

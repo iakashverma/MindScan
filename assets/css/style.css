@@ -1,33 +1,24 @@
 :root {
-    --bg-main: #e5eee4;
-    --bg-alt: #f7faf6;
-    --card: rgba(255, 255, 255, 0.9);
+    --bg-main: #f7f9ff;
+    --bg-alt: #ffffff;
+    --card: #ffffff;
     --card-strong: #ffffff;
-    --glass-border: rgba(65, 90, 70, 0.12);
-    --text-main: #1f2a24;
-    --text-muted: #5b6b62;
-    --accent: #6fa07a;
-    --accent-strong: #5d8e6b;
-    --accent-cyan: #7bb7a4;
-    --accent-pink: #d89aa1;
-    --shadow: 0 12px 30px rgba(45, 60, 50, 0.12);
+    --glass-border: rgba(30, 40, 70, 0.08);
+    --text-main: #000000;
+    --text-muted: #111111;
+    --accent: #2a72ff;
+    --accent-strong: #1e52c8;
+    --accent-cyan: #6ad6ff;
+    --accent-pink: #ff7fbf;
+    --shadow: 0 16px 34px rgba(30, 40, 70, 0.08);
     --radius-lg: 24px;
-    --radius-md: 16px;
-    --radius-sm: 10px;
+    --radius-md: 20px;
+    --radius-sm: 12px;
     --transition: 0.3s ease;
-    --font-display: "Space Grotesk", "Sora", sans-serif;
+    --font-display: "DM Sans", "Segoe UI", sans-serif;
 }
 
-[data-theme="light"] {
-    --bg-main: #e5eee4;
-    --bg-alt: #f7faf6;
-    --card: rgba(255, 255, 255, 0.9);
-    --card-strong: #ffffff;
-    --glass-border: rgba(65, 90, 70, 0.12);
-    --text-main: #1f2a24;
-    --text-muted: #5b6b62;
-    --shadow: 0 12px 30px rgba(45, 60, 50, 0.12);
-}
+
 
 * {
     box-sizing: border-box;
@@ -106,7 +97,7 @@ a:hover {
 .glass-nav {
     backdrop-filter: blur(18px);
     -webkit-backdrop-filter: blur(18px);
-    background: rgba(255, 255, 255, 0.85);
+    background: var(--card);
     border-bottom: 1px solid var(--glass-border);
 }
 
@@ -126,6 +117,7 @@ a:hover {
     flex-direction: column;
     font-weight: 700;
     letter-spacing: 1px;
+    color: #000000;
 }
 
 .brand-mark {
@@ -197,7 +189,7 @@ a:hover {
     font-weight: 600;
     padding: 12px 24px;
     border-radius: 999px;
-    box-shadow: 0 12px 24px rgba(111, 160, 122, 0.2);
+    box-shadow: 0 12px 24px rgba(42, 114, 255, 0.2);
     transition: var(--transition);
 }
 
@@ -212,7 +204,7 @@ a:hover {
 }
 
 .btn-outline-light:hover {
-    background: rgba(111, 160, 122, 0.12);
+    background: rgba(42, 114, 255, 0.12);
     color: var(--accent-strong);
 }
 
@@ -257,24 +249,25 @@ a:hover {
 }
 
 .glass-panel {
-    background: var(--card);
+    background: var(--bg-main);
     border-radius: var(--radius-lg);
     border: 1px solid var(--glass-border);
     box-shadow: var(--shadow);
-    padding: 28px;
+    padding: 36px;
 }
 
 .glass-card {
     background: var(--card);
     border-radius: var(--radius-md);
     border: 1px solid var(--glass-border);
+    box-shadow: var(--shadow);
     padding: 24px;
     transition: var(--transition);
 }
 
 .glass-card:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 18px 40px rgba(15, 20, 45, 0.4);
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-hover);
 }
 
 .stat-grid {
@@ -284,11 +277,12 @@ a:hover {
 }
 
 .stat-card {
-    background: rgba(255, 255, 255, 0.05);
+    background: var(--card);
     border-radius: var(--radius-sm);
     padding: 16px;
     text-align: center;
     border: 1px solid var(--glass-border);
+    box-shadow: var(--shadow);
 }
 
 .stat-card h3 {
@@ -325,7 +319,7 @@ a:hover {
     height: 14px;
     border-radius: 50%;
     background: var(--accent-cyan);
-    box-shadow: 0 0 12px rgba(37, 213, 255, 0.6);
+    box-shadow: 0 0 12px var(--shadow);
 }
 
 .dashboard-grid {
@@ -346,7 +340,7 @@ a:hover {
 .pdf-viewer {
     border-radius: var(--radius-md);
     overflow: hidden;
-    background: rgba(10, 15, 30, 0.8);
+    background: var(--bg-alt);
     border: 1px solid var(--glass-border);
     box-shadow: var(--shadow);
 }
@@ -383,7 +377,7 @@ a:hover {
 
 .assessment-progress {
     height: 6px;
-    background: rgba(255, 255, 255, 0.1);
+    background: var(--bg-main);
     border-radius: 999px;
     overflow: hidden;
     margin-bottom: 24px;
@@ -404,7 +398,7 @@ a:hover {
 }
 
 .likert label {
-    background: rgba(255, 255, 255, 0.05);
+    background: var(--bg-main);
     padding: 10px;
     border-radius: 10px;
     text-align: center;
@@ -422,7 +416,7 @@ a:hover {
 }
 
 .likert input:checked + span {
-    color: #0c111f;
+    color: #ffffff;
     background: linear-gradient(135deg, var(--accent), var(--accent-cyan));
 }
 
@@ -452,7 +446,7 @@ a:hover {
 
 .emoji-group input:checked + span {
     border: 1px solid var(--accent-cyan);
-    background: rgba(37, 213, 255, 0.12);
+    background: var(--bg-main);
 }
 
 .report-grid {
@@ -581,7 +575,7 @@ a:hover {
 .loading-screen {
     position: fixed;
     inset: 0;
-    background: #080b16;
+    background: var(--bg-main);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -599,7 +593,7 @@ a:hover {
     width: 48px;
     height: 48px;
     border-radius: 50%;
-    border: 4px solid rgba(255, 255, 255, 0.2);
+    border: 4px solid rgba(30, 40, 70, 0.1);
     border-top-color: var(--accent-cyan);
     animation: spin 1s linear infinite;
     margin-bottom: 12px;
@@ -1551,8 +1545,20 @@ body.insights-body .theme-toggle {
 
 .findings-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
+}
+
+@media (max-width: 991px) {
+    .findings-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 767px) {
+    .findings-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 .findings-card {

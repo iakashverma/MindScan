@@ -1,6 +1,6 @@
 </main>
 
-<footer class="footer glass-panel">
+<footer class="footer" style="background: var(--card); padding: 40px 0; border-top: 1px solid var(--glass-border); margin-top: 60px;">
     <div class="container">
         <div class="row gy-4">
             <div class="col-md-6">
